@@ -1,0 +1,295 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    background: #F9FAFB;
+    position: relative;
+}
+
+/* recs */
+/* .rec5{ */
+    /* Rectangle 5 */
+/* position: absolute;
+width: 1440px;
+height: 89px;
+left: 0px;
+top: 89px;
+
+background: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #F9FAFB 95.69%);
+transform: rotate(-180deg);
+} */
+/* Rectangle 5 */
+
+/* .rec4{ */
+    /* Rectangle 4 */
+
+
+/* position: absolute;
+width: 1440px;
+height: 224px;
+left: 0px;
+bottom: 0px;
+
+background: linear-gradient(180deg, rgba(249, 250, 251, 0) 0%, #F9FAFB 47.81%);
+z-index: 999; */
+
+/* } */
+/* header */
+header h1{
+    margin: 35px auto ;
+    width: 377px;
+    height: 87px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 87px;
+    color: #E2E8F0;
+}
+
+main .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 34px;
+    width: 445px;
+    margin: 0 auto;
+}
+/* Todo Card */
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 26px 34px;
+    gap: 12px;
+    width: 445px;
+    height: 171px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 377px;
+    height: 130px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card h2{
+    width: 221px;
+    height: 29px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #374151;
+    /* white-space:nowrap; */
+    -webkit-line-clamp: 1;
+    overflow : hidden;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.card p{
+    width: 377px;
+    height: 41px;
+    display: -webkit-box;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #6B7280;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.card .spans{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    width: 97px;
+    height: 25px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+/* red span */
+.card .spans div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 10px;
+    width: 30px;
+    height: 25px;
+    background: #FCE7F3;
+    border-radius: 10px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.card .spans div:first-child span{
+    /* P1 */
+    width: 14px;
+    height: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E11D48;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/* the gren span let them in group */
+.card .spans div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 10px;
+    width:  55px;
+    height: 25px;
+    background: #F0FDF4;
+    border-radius: 10px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.card .spans div:last-child span{
+    /* Health */
+    width: 39px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #16A34A;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+/*  \\\\\\\\\\\\\\\\\\\((ADD SECTION))\\\\\\\\\\\\\\\\\\\\\\\*/
+/* ADD ICON TO DISPLAY HTE SECTION */
+.add {
+    margin: 20px auto;    
+    width: 36px;
+    height: 36px;
+}
+.add .add-icon{
+    width: 35px;
+    height: 35px;
+    padding: 3px 7px;
+    cursor: pointer;
+    border: 3px solid #E2E8F0;
+    border-radius: 50%;
+    color: #E2E8F0;
+}
+
+/* add form  */
+.addForm{
+    display: none;
+    margin: 40px auto ;
+    width: 455px;
+    height: 331px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+form{
+    position: relative;
+    width: 370px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+form #newTitle{
+    width: 370px;
+    height: 44px;
+}
+form textarea{
+    width: 370px;
+    height: 70px;
+    resize: none;
+    margin: 20px 0;
+
+}
+#newTitle,textarea{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #E2E8F0;
+    border-radius: 4px;
+    padding: 10px;
+}
+#newTitle::placeholder,textarea::placeholder{
+    color: #E2E8F0;
+}
+.submit{
+    position:absolute;
+    bottom: -80px;
+    left: 50%;
+    z-index: 9999;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: rotate3d(0,1,0,180deg) translateX(50%);
+}
+.submit .true{
+    transform: rotate(-45deg);
+}
+.submit span,.add .add-icon{
+    transition: 0.2s;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1.8;
+    cursor: pointer;
+    border: 3px solid #E2E8F0;
+    border-radius: 50%;
+    color: #E2E8F0;
+}
+.true:hover, .add-icon:hover{
+    color: #16A34A;
+    border-color: #16A34A;
+}
+.false:hover{
+    color:#E11D48 ;
+    border-color:#E11D48 ;
+}
