@@ -1,13 +1,12 @@
 ////////////////////  INFLAT ELEMENTS  //////////////////////////
 let containerCard = document.getElementById("containerCard"),
     addBtn = document.getElementById('addBtn'),
-    addForm =document.querySelector('.addForm'),
+    addForm =document.getElementById("addForm"),
+    main =document.querySelector('main'),
     add =document.querySelector('.true'),
     cansle =document.querySelector('.false'),
     title=document.getElementById('newTitle'),
     contint=document.getElementById('contint');
-
-
 ////////////////////  AJAX  /////////////////////////
 const getData=(link)=>{
     return new Promise((resolve,reject)=>{
@@ -38,10 +37,12 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 addBtn.addEventListener("click",()=>{
     addForm.style.display="block"
     addBtn.parentElement.style.display="none"
+    window.scrollTo(0, document.body.scrollHeight - 500);
 })
-cansle.addEventListener("click",()=>{
+cansle.addEventListener("click",()=>{ 
     addForm.style.display="none"
     addBtn.parentElement.style.display="block"
+    
 })
 add.addEventListener("click",()=>{
     if(title.value.trim() !== ""&&contint.value.trim() !== ""){
@@ -108,8 +109,6 @@ const addItem=(title,body)=>{
         containerCard.innerHTML += card
         */
 }
-
-
 ////////////////////  post Item with Fetch /////////////////////////
 const postItemFetch =(title,body)=>{
     fetch('https://jsonplaceholder.typicode.com/posts',
@@ -131,4 +130,3 @@ const postItemFetch =(title,body)=>{
         .then(json => console.log(json))
         .catch(console.error("Error:something is wrong"))
 }
-
